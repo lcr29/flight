@@ -6,8 +6,7 @@ from datetime import datetime
 
 # Load your trained model
 def load_model():
-    model = joblib.load('flight_prediction_compressed.pkl.gz')
-    print(type(model))  # This will print the type of the loaded model
+    model = joblib.load('flight_prediction.pkl')
     return model
 
 model = load_model()
