@@ -4,12 +4,7 @@ import numpy as np
 import joblib
 from datetime import datetime
 
-# Load your trained model
-def load_model():
-    model = joblib.load('flight_prediction.pkl.gz')
-    return model
-
-model = load_model()
+model = joblib.load('flight_prediction.pkl.gz')
 
 # The list of columns from the training data
 train_cols = [
